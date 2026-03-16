@@ -1,455 +1,462 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purisaki</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Purisaki Berberine Patch - Wellness Premium</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#195de6",
+                        "accent": "#facc15",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#111621",
+                        "sage": "#eef2ed",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-nav {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
 </head>
 
-<body>
-
-    <header class="header">
-
-        <div class="container header-container">
-
-            <div class="logo">
-                <img src="https://via.placeholder.com/120x40">
+<body class="bg-background-light text-slate-900 font-display">
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary text-3xl">spa</span>
+                    <h1 class="font-bold text-xl tracking-tight">Purisaki</h1>
+                </div>
+                <div class="hidden md:flex items-center gap-2 text-sm font-medium text-slate-600">
+                    <span class="material-symbols-outlined text-green-600 text-lg">local_shipping</span>
+                    <span>Entrega para todo Brasil</span>
+                </div>
             </div>
-
-            <div class="country">
-                🇧🇷 Entregar para <strong>Brasil</strong>
-            </div>
-
-            <nav class="nav">
-                <a href="#">Como funciona</a>
-                <a href="#">Perguntas frequentes</a>
-                <a class="btn-header" href="#">PEÇA AGORA</a>
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+                <a class="hover:text-primary transition-colors" href="#como-funciona">Como Funciona</a>
+                <a class="hover:text-primary transition-colors" href="#faq">Perguntas Frequentes</a>
+                <a class="hover:text-primary transition-colors" href="#beneficios">Benefícios</a>
             </nav>
-
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-primary text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-blue-700 transition-all shadow-lg shadow-primary/20">
+                    Peça Agora
+                </button>
+            </div>
         </div>
-
     </header>
-
-    <section class="hero">
-
-        <div class="container hero-grid">
-
-            <div class="hero-text">
-
-                <h1>
-                    Adesivo Purisaki <br>
-                    de berberina
-                </h1>
-
-                <p class="subtitle">
-                    Apoio à base de plantas para promover o seu equilíbrio diário
-                    e a sua jornada de bem-estar
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-white pt-16 pb-24">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="z-10">
+                <span
+                    class="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-bold text-xs uppercase tracking-wider mb-6">
+                    Bem-estar Natural
+                </span>
+                <h2 class="text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-6">
+                    Adesivo Purisaki de berberina
+                </h2>
+                <p class="text-lg text-slate-600 mb-8 max-w-lg">
+                    Equilíbrio baseado em plantas para sua rotina de bem-estar. Sinta a harmonia interna com nossa
+                    tecnologia de absorção constante.
                 </p>
-
-                <ul class="benefits">
-
-                    <li>Promove uma sensação de saciedade</li>
-                    <li>Um apoio constante, sem esforço</li>
-                    <li>Rotina matinal de 10 segundos</li>
-
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-3">
+                        <div class="size-6 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-green-600 text-sm font-bold">check</span>
+                        </div>
+                        <p class="font-medium text-slate-700">Promove saciedade natural</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="size-6 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-green-600 text-sm font-bold">check</span>
+                        </div>
+                        <p class="font-medium text-slate-700">Apoio metabólico constante</p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="size-6 rounded-full bg-green-100 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-green-600 text-sm font-bold">check</span>
+                        </div>
+                        <p class="font-medium text-slate-700">Rotina simples de 10 segundos</p>
+                    </div>
+                </div>
+                <button
+                    class="group relative flex items-center justify-center gap-2 bg-primary text-white px-10 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-primary/30">
+                    PEÇA AGORA
+                    <span
+                        class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+            </div>
+            <div class="relative">
+                <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl transform scale-110"></div>
+                <img class="relative w-full h-[600px] object-cover rounded-3xl shadow-2xl"
+                    data-alt="Mulher sorridente praticando yoga e bem-estar"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0sFv74AR35aEU47lyUU_Il0k-_xxYSnvB97EHp3RtU_CyA3hG9hQXvASw-uE4bcA_iZScREaih1-9VHUeL9dDUwS9N-YCwskope15F7q-buZGysFihvIcQZxmu4CRt_QBxkR1fxBzR0pA4vigzifCxZIxTdaST7xoUBkIoG8DwT4Rq4uSAx79-iTB3m4cYmAi3ph3Lbrjx66vTCCVqh3ppuH65oa2B1yVOcAP47iAGl3RuxDzxY9fOQedLIB8lX_CXXsV8J_nt4E" />
+                <div
+                    class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-slate-100">
+                    <div class="size-12 rounded-full bg-accent flex items-center justify-center">
+                        <span class="material-symbols-outlined text-white">verified</span>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-500 font-bold uppercase">Qualidade Premium</p>
+                        <p class="font-bold text-slate-900 text-lg">100% Ingredientes Ativos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="bg-sage py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Inspirado na harmonia da natureza...</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">Equilíbrio interno para uma vida mais plena e saudável através
+                de extratos botânicos selecionados.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div
+                class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 group hover:shadow-xl transition-shadow">
+                <img class="w-full h-64 object-cover rounded-2xl mb-6"
+                    data-alt="Alimentação saudável com vegetais frescos"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBy2Z7HUP6PMeQt1-mk-bBmHlqEEzODpB56Fj3rmW3cmA3NWGHrvHfNs5RwfexciEb1BmIDEuKq5FxkGHG97SVJxeDiCGEE4yRaFCgS0ComsdN6iId0oq-9ZmCjG0pjNeXrkltLUlsaZTXhtFRZ6ZFxFwAH1enZgqjgJmdAVL_CJh9-VwLZKxV_qZDtvqiunpEzJZyPwRnJiNDUwSJ0PIk2ujIszf-_WSnoh3VYx_sWHs5boSq68lw_BmzDYs_AiLzz8wQn7rkaKew" />
+                <div class="px-2 pb-4">
+                    <h3 class="text-xl font-bold mb-2">Nutrição Vital</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Promove o equilíbrio nutricional e auxilia no
+                        controle da ingestão calórica diária.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 group hover:shadow-xl transition-shadow">
+                <img class="w-full h-64 object-cover rounded-2xl mb-6"
+                    data-alt="Mulher madura se exercitando ao ar livre"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO8f76BvtDdO9FJySHPdJ8ezlKkXIVI2KhVLUFARFViVxy2W8YuViK35LDudqRhKy33g9L2z8NlFHXNy5IOoX9Mfb1EV9mJeL1YOwp79QsNwyMAtUkhDghVqFIpQ518RF9-e-vf6dRGTcCG6FfpERd0nuuHkt99GWDy1RdKxj0riIRgszyZgXS8ftaLDia2ozv_XbhJjlci5rP63SCMjmW1SMvMZS5xPkbzLZgmA6gV-aPqUBPeXZy3BcihbpMOhcSKRD1Wx1Cs6Y" />
+                <div class="px-2 pb-4">
+                    <h3 class="text-xl font-bold mb-2">Energia Diária</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Sinta-se mais ativo e disposto para suas
+                        atividades físicas e rotina de lazer.</p>
+                </div>
+            </div>
+            <div
+                class="bg-white p-4 rounded-3xl shadow-sm border border-slate-100 group hover:shadow-xl transition-shadow">
+                <img class="w-full h-64 object-cover rounded-2xl mb-6"
+                    data-alt="Pessoa relaxando e lendo livro em ambiente calmo"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBK21LT1enFnuRF5IwI78HXIguinwOyOU9oP183NfnEw7qtAIXYMEQezlljWAF2LLVxXMT0zOfvymCFOtFtQARGFVWXZ2BO7jssWDAoJD-zNfN_0sxAqQ9rdC6mgqdsqO7sss2vzbE5qM4vj8tLfrfdXPSwN2AFq1KhGaO6ay_vZ7hlFLWnICnVGK9qI-3xitG4GPkdKzp_3c7Afa3XQbR3o-CfpK1-9mm6C6p3F4ihBrMPykIsZWAmeaOMbEtzz6c_VL47tjdwlwM" />
+                <div class="px-2 pb-4">
+                    <h3 class="text-xl font-bold mb-2">Foco e Clareza</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed">Mantenha a mente tranquila e focada no que
+                        realmente importa no seu dia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-24 bg-white" id="beneficios">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-6">
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="size-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">nature</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Apoio Natural</h3>
+                    <p class="text-slate-500 text-sm">Fórmulas botânicas puras que respeitam seu corpo.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="size-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Simples e Consciente</h3>
+                    <p class="text-slate-500 text-sm">Fácil aplicação para uma vida sem complicações.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="size-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">restore</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Aliado Constante</h3>
+                    <p class="text-slate-500 text-sm">Liberação gradual para suporte durante 24 horas.</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 text-center">
+                    <div class="size-14 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <span class="material-symbols-outlined text-primary text-3xl">fitbit</span>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Adapta-se à Vida</h3>
+                    <p class="text-slate-500 text-sm">Discreto e resistente para qualquer atividade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How To Use -->
+    <section class="py-24 bg-background-light" id="como-funciona">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">Uma forma simples de se cuidar</h2>
+                <p class="text-slate-600">Três passos fáceis para integrar o Purisaki no seu dia a dia.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="relative mb-8 inline-block">
+                        <img class="size-48 object-cover rounded-full border-4 border-white shadow-xl mx-auto"
+                            data-alt="Pessoa aplicando adesivo na pele limpa"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaxoClvYMCmqDcdEeJaqbGL_sQOJhNbUta7JNBVuIT_JvsCOni83fmgZXgmIp3GV6HMvru_gKCuI5Zs2Aq0PFp8IRo3-VAM9ycMqWNjGdsdDuPgXpk5pWl5Eqtk28FkCY3yOoSb8UEfxWW52hmARfxUfCzkD5J88ihd6JPSjuS4324I_JdaoSMMs1JBDfJcuKJkNVqLqeVpCNCkYGtNqn5aSxFK2T5E6WAhlGG_GGM2ZXiYLCmAYoUgPCMzscnUkYhGBw4KtZTZP0" />
+                        <span
+                            class="absolute -top-2 -right-2 size-10 bg-primary text-white flex items-center justify-center rounded-full font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Aplique</h3>
+                    <p class="text-slate-500 text-sm">Coloque um adesivo sobre a pele limpa e seca, preferencialmente em
+                        áreas sem pelos.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-8 inline-block">
+                        <img class="size-48 object-cover rounded-full border-4 border-white shadow-xl mx-auto"
+                            data-alt="Mulher correndo feliz durante o dia"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIEs3FuG4ga5nKhLayB0xQmSXWOP05FWn5p9RqA6ljKXphK5M-bKR3BPbIkgIPlA91AbAmRF8mtDYEelb-NIp_F-sAG-iRJzeIGQ2pV-sO_hi5Ey2OHND2wBVwyXTbzwq_8UpMf52FcHvc9dCejDjuBXUTeBnr4O57xpmQqet76JJn0KGtsuTiVfFMV5rjiSpJdKkw5L7IR1Ee-zwHxw4u49Aj6N0zKdKRmq6jVg2jmecIyXH4mUKs3m3LwTnZSEN7fPuac5mCvMY" />
+                        <span
+                            class="absolute -top-2 -right-2 size-10 bg-primary text-white flex items-center justify-center rounded-full font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Siga seu dia</h3>
+                    <p class="text-slate-500 text-sm">Deixe o adesivo agir por até 24 horas. Ele é discreto e
+                        confortável sob a roupa.</p>
+                </div>
+                <div class="text-center">
+                    <div class="relative mb-8 inline-block">
+                        <img class="size-48 object-cover rounded-full border-4 border-white shadow-xl mx-auto"
+                            data-alt="Mãos removendo suavemente o adesivo"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCviwvoVSaOnUYtuDRVeaPRcYtXqIWErWULttgK8IaZUhGg1nV_j2vyeMc44LE458Hp_NOSGR6vnWH26SfZzYQCxOkY8E0nXwjPfH3tYZUYSmUK9GekPa3tMxyKEkCaU8JQiSO7tPeoQp7CbRerDMwGmz4fh8iNDqg_4bs8bQ1N6i97b3dknNyMfJ_vLHLWalgFyVtR-TOcHxBJhTSGS-qzjBi-Pq4tD56qpW56l-PKK7dHTCJqQ9LDYAT-qGmGVUXFUUXIHm-oxVg" />
+                        <span
+                            class="absolute -top-2 -right-2 size-10 bg-primary text-white flex items-center justify-center rounded-full font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Substitua</h3>
+                    <p class="text-slate-500 text-sm">Remova o adesivo após 24h e aplique um novo em uma posição
+                        ligeiramente diferente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Comparison Table -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Porquê optar pelos adesivos Purisaki?</h2>
+            <div class="overflow-hidden rounded-3xl border border-slate-200 shadow-xl">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-50">
+                            <th class="p-6 font-bold text-slate-900 border-b border-slate-200">Característica</th>
+                            <th class="p-6 font-bold text-primary border-b border-slate-200 text-center">Adesivo
+                                Purisaki</th>
+                            <th class="p-6 font-bold text-slate-400 border-b border-slate-200 text-center">Cápsulas
+                                Comuns</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="p-6 text-sm font-medium">Absorção</td>
+                            <td class="p-6 text-center text-primary"><span
+                                    class="material-symbols-outlined">check_circle</span> Transdérmica Direta</td>
+                            <td class="p-6 text-center text-slate-400">Via Digestiva (Perda de 60%)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-sm font-medium">Liberação</td>
+                            <td class="p-6 text-center text-primary"><span
+                                    class="material-symbols-outlined">check_circle</span> 24h Constante</td>
+                            <td class="p-6 text-center text-slate-400">Picos e quedas rápidas</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-sm font-medium">Praticidade</td>
+                            <td class="p-6 text-center text-primary"><span
+                                    class="material-symbols-outlined">check_circle</span> 1x ao dia</td>
+                            <td class="p-6 text-center text-slate-400">3x ao dia com água</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 text-sm font-medium">Conforto Estomacal</td>
+                            <td class="p-6 text-center text-primary"><span
+                                    class="material-symbols-outlined">check_circle</span> Zero Irritação</td>
+                            <td class="p-6 text-center text-slate-400">Pode causar desconforto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-12 text-center">
+                <button
+                    class="bg-primary text-white px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-xl shadow-primary/30">
+                    QUERO EXPERIMENTAR AGORA
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-24 bg-background-light" id="faq">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Perguntas Frequentes</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden" open="">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 list-none">
+                        Quanto tempo leva para ver resultados?
+                        <span
+                            class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                        A maioria dos usuários relata uma sensação de maior saciedade e energia estável nos primeiros 7
+                        a 10 dias de uso contínuo.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 list-none">
+                        Posso usar o adesivo durante o banho?
+                        <span
+                            class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                        Sim! Nossos adesivos são resistentes à água. No entanto, evite esfregar a área com buchas ou
+                        sabonetes agressivos diretamente sobre o adesivo.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 list-none">
+                        Existem efeitos colaterais?
+                        <span
+                            class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                        O Purisaki é formulado com ingredientes naturais. Pessoas com pele extremamente sensível podem
+                        notar uma leve vermelhidão local, que desaparece ao alternar o local da aplicação.
+                    </div>
+                </details>
+                <details class="group bg-white rounded-2xl border border-slate-200 overflow-hidden">
+                    <summary
+                        class="flex items-center justify-between p-6 cursor-pointer font-bold text-slate-900 list-none">
+                        Qual o prazo de entrega?
+                        <span
+                            class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                    </summary>
+                    <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-50">
+                        Para todo o Brasil, o prazo médio é de 5 a 12 dias úteis, dependendo da sua região. Você
+                        receberá um código de rastreio em até 48h.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12 mb-16">
+            <div>
+                <div class="flex items-center gap-2 mb-6">
+                    <span class="material-symbols-outlined text-primary text-3xl">spa</span>
+                    <h1 class="font-bold text-xl tracking-tight">Purisaki</h1>
+                </div>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Dedicados a trazer o melhor da natureza diretamente para sua pele. Tecnologia transdérmica avançada
+                    para um estilo de vida consciente.
+                </p>
+                <div class="flex gap-4">
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                            class="material-symbols-outlined">public</span></a>
+                    <a class="text-slate-400 hover:text-white transition-colors" href="#"><span
+                            class="material-symbols-outlined">share</span></a>
+                </div>
+            </div>
+            <div>
+                <h4 class="font-bold mb-6">Loja</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><a class="hover:text-white" href="#">Comprar Adesivos</a></li>
+                    <li><a class="hover:text-white" href="#">Kits Promocionais</a></li>
+                    <li><a class="hover:text-white" href="#">Assinatura Mensal</a></li>
                 </ul>
-
-                <a class="btn-hero" href="#">
-                    Peça agora!
-                </a>
-
             </div>
-
-            <div class="hero-image">
-                <img src="https://via.placeholder.com/800x600">
+            <div>
+                <h4 class="font-bold mb-6">Informações</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li><a class="hover:text-white" href="#">Termos de Uso</a></li>
+                    <li><a class="hover:text-white" href="#">Política de Privacidade</a></li>
+                    <li><a class="hover:text-white" href="#">Rastrear Pedido</a></li>
+                </ul>
             </div>
-
+            <div>
+                <h4 class="font-bold mb-6">Suporte ao Cliente</h4>
+                <ul class="space-y-4 text-sm text-slate-400">
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-xs">call</span> US: +1 800 123 456
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span class="material-symbols-outlined text-xs">call</span> UK: +44 20 1234 5678
+                    </li>
+                    <li class="flex items-center gap-2 text-primary font-medium">
+                        <span class="material-symbols-outlined text-xs">mail</span> suporte@purisaki.com.br
+                    </li>
+                </ul>
+            </div>
         </div>
-
-    </section>
-
-    <section class="about">
-
-        <div class="container">
-
-            <h2 class="about-title">
-                Inspirado na harmonia da natureza, com
-                uma fórmula com infusão de berberina
-            </h2>
-
-            <p class="about-text">
-                Por vezes, é difícil ouvir o seu equilíbrio interior. A Purisaki acompanha-o na sua jornada rumo ao
-                bem-estar,
-                apoiando-o na sua busca por equilíbrio e atenção plena, ajudando-o assim a fazer escolhas que apoiam um
-                estilo
-                de vida consciente.
+        <div
+            class="max-w-7xl mx-auto px-6 pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
+            <p class="text-slate-500 text-xs text-center md:text-left">
+                © 2026 Purisaki Berberine Patch. Todos os direitos reservados. Isenção de responsabilidade: Este produto
+                não substitui o conselho médico profissional.
             </p>
-
-            <div class="about-grid">
-
-                <div class="about-card">
-
-                    <img src="https://via.placeholder.com/400x260">
-
-                    <div class="card-content">
-                        <h3>
-                            Favorece o foco numa alimentação consciente
-                            e no bem-estar
-                        </h3>
-
-                        <p>
-                            Apoio discreto e constante ao longo do dia,
-                            enquanto desfruta de um estilo de vida equilibrado.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <img src="https://via.placeholder.com/400x260">
-
-                    <div class="card-content">
-                        <h3>
-                            Abraçar o equilíbrio, desfrutar de uma sensação
-                            de estabilidade durante todo o dia
-                        </h3>
-
-                        <p>
-                            Redescubra o seu ritmo natural e desfrute de
-                            harmonia diária.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <img src="https://via.placeholder.com/400x260">
-
-                    <div class="card-content">
-                        <h3>
-                            Um apoio constante para a sua rotina diária
-                        </h3>
-
-                        <p>
-                            Basta aplicar e desfrutar do seu dia.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="benefits">
-
-        <div class="benefits-bar">
-
-            <div class="container bar-content">
-
-                <div class="rating">
-                    <img src="https://via.placeholder.com/90x24">
-                    <span>4.5 ★★★★★</span>
-                </div>
-
-                <a class="btn-bar">Peça agora!</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="container benefits-grid">
-
-            <div class="benefit-item">
-                <div class="icon">🌿</div>
-                <h4>Apoio natural</h4>
-                <p>Uma abordagem à base de berberina para apoiar o seu equilíbrio diário.</p>
-            </div>
-
-            <div class="benefit-item">
-                <div class="icon">🧘</div>
-                <h4>Simples e consciente</h4>
-                <p>Complemente as suas escolhas conscientes e a sua harmonia interior.</p>
-            </div>
-
-            <div class="benefit-item">
-                <div class="icon">🔄</div>
-                <h4>Aliado constante durante todo o dia</h4>
-                <p>Apoio botânico constante ao longo de todo o dia.</p>
-            </div>
-
-            <div class="benefit-item">
-                <div class="icon">⏳</div>
-                <h4>Adapta-se à sua vida agitada</h4>
-                <p>Aplicação discreta e fácil que atua discretamente em segundo plano.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <section class="ingredients">
-
-        <div class="container">
-
-            <h2 class="ingredients-title">
-                Produto formulado com ingredientes testados em
-                contextos de bem-estar
-            </h2>
-
-            <div class="ingredients-grid">
-
-                <div class="ingredient-card">
-
-                    <img src="https://via.placeholder.com/260x160">
-
-                    <h4>Extrato de berberina</h4>
-
-                    <p>Pode contribuir para promover o equilíbrio interno natural do seu corpo.</p>
-
-                </div>
-
-
-                <div class="ingredient-card">
-
-                    <img src="https://via.placeholder.com/260x160">
-
-                    <h4>Extrato de fucoxantina</h4>
-
-                    <p>Apoia a sua vitalidade diária e o equilíbrio dos seus níveis de energia.</p>
-
-                </div>
-
-
-                <div class="ingredient-card">
-
-                    <img src="https://via.placeholder.com/260x160">
-
-                    <h4>Óleo de romã</h4>
-
-                    <p>Promove a luminosidade natural da pele e a sua proteção diária.</p>
-
-                </div>
-
-
-                <div class="ingredient-card">
-
-                    <img src="https://via.placeholder.com/260x160">
-
-                    <h4>Extrato de chá-verde</h4>
-
-                    <p>Pode apoiar suavemente a sua revitalização diária.</p>
-
-                </div>
-
-            </div>
-
-            <p class="ingredients-note">
-                + 9 ingredientes naturais, como extrato de manga africana, vitamina C, B1 e B3
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- HOW TO USE -->
-
-    <section class="usage">
-
-        <div class="container">
-
-            <h2 class="usage-title">
-                A simple way to support your daily wellness goals
-            </h2>
-
-            <div class="usage-grid">
-
-                <div class="usage-step">
-
-                    <img src="https://via.placeholder.com/320x200">
-
-                    <h4>1. Remove from package</h4>
-
-                    <p>
-                        Take the patch out of the package,
-                        which preserves its botanical integrity.
-                    </p>
-
-                </div>
-
-
-                <div class="usage-step">
-
-                    <img src="https://via.placeholder.com/320x200">
-
-                    <h4>2. Apply</h4>
-
-                    <p>
-                        Use it for up to 8 hours as part
-                        of your daily routine.
-                    </p>
-
-                </div>
-
-
-                <div class="usage-step">
-
-                    <img src="https://via.placeholder.com/320x200">
-
-                    <h4>3. Enjoy</h4>
-
-                    <p>
-                        Stay aligned with your natural
-                        daily rhythm.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ADVANTAGES -->
-
-    <section class="advantages">
-
-        <div class="container">
-
-            <h2 class="advantages-title">
-                Why choose Purisaki berberine patches?
-            </h2>
-
-            <div class="advantages-box">
-
-                <div class="advantages-list">
-
-                    <p>Quick routine</p>
-                    <p>Mindful balance</p>
-                    <p>Discretion & privacy</p>
-                    <p>Gentle on the skin</p>
-                    <p>Available for everyone</p>
-                    <p>Monthly value</p>
-
-                </div>
-
-
-                <div class="advantages-card">
-
-                    <div class="card-header">
-                        <h4>The wellness advantage</h4>
-                    </div>
-
-                    <div class="card-body">
-
-                        <div class="check">✔</div>
-                        <div class="check">✔</div>
-                        <div class="check">✔</div>
-                        <div class="check">✔</div>
-                        <div class="check">✔</div>
-
-                    </div>
-
-                    <div class="card-price">
-                        Starting from $36.00
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a class="btn-cta">Order now!</a>
-
-        </div>
-
-    </section>
-
-    <footer class="footer">
-        <div class="footer-container">
-
-            <div class="footer-logo">
-                <h2>purisakí</h2>
-            </div>
-
-            <div class="footer-columns">
-
-                <div class="footer-col">
-                    <h4>COMPRAR</h4>
-                    <ul>
-                        <li><a href="#">Atacado</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>INFORMAÇÕES</h4>
-                    <ul>
-                        <li><a href="#">Termos de serviço</a></li>
-                        <li><a href="#">Política de privacidade</a></li>
-                        <li><a href="#">Política de envio</a></li>
-                        <li><a href="#">Afiliados</a></li>
-                        <li><a href="#">Política de cookies</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>PEDIDO</h4>
-                    <ul>
-                        <li><a href="#">Rastrear meu pedido</a></li>
-                        <li><a href="#">Política de devoluções e reembolsos</a></li>
-                        <li><a href="#">Perguntas frequentes</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col">
-                    <h4>ATENDIMENTO AO CLIENTE:</h4>
-                    <ul>
-                        <li>📞 US +1 (850) 389-0125</li>
-                        <li>📞 UK +44 208 089 1401</li>
-                        <li>📞 DE +49 800 400 9820</li>
-                        <li>✉ Envie-nos um email</li>
-                    </ul>
-                </div>
-
+            <div class="flex items-center gap-4 grayscale opacity-50">
+                <span class="material-symbols-outlined text-2xl">credit_card</span>
+                <span class="material-symbols-outlined text-2xl">payments</span>
+                <span class="material-symbols-outlined text-2xl">account_balance_wallet</span>
             </div>
         </div>
-
-        <div class="footer-bottom">
-
-            <div class="copyright">
-                ® 2026 Purisaki Berberine Todos os direitos reservados.
-            </div>
-
-            <div class="payments">
-                <img src="visa.png">
-                <img src="mastercard.png">
-                <img src="paypal.png">
-                <img src="klarna.png">
-                <img src="amex.png">
-            </div>
-
-            <div class="language">
-                PORTUGUÊS (BRASIL) ▼
-            </div>
-
-        </div>
-
     </footer>
-
+    <!-- Floating Review Banner -->
+    <div
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-2xl bg-primary shadow-2xl rounded-2xl p-4 flex items-center justify-between animate-bounce-subtle">
+        <div class="flex items-center gap-4">
+            <div class="hidden sm:flex size-10 bg-white rounded-lg items-center justify-center">
+                <span class="material-symbols-outlined text-primary">verified_user</span>
+            </div>
+            <div>
+                <div class="flex items-center gap-1 text-accent">
+                    <span class="material-symbols-outlined text-sm fill-current">star</span>
+                    <span class="material-symbols-outlined text-sm fill-current">star</span>
+                    <span class="material-symbols-outlined text-sm fill-current">star</span>
+                    <span class="material-symbols-outlined text-sm fill-current">star</span>
+                    <span class="material-symbols-outlined text-sm">star_half</span>
+                    <span class="text-white text-xs font-bold ml-1">4.5/5 (2,400+ reviews)</span>
+                </div>
+                <p class="text-white text-xs font-medium">Oferta limitada: 30% OFF hoje!</p>
+            </div>
+        </div>
+        <button
+            class="bg-accent text-slate-900 px-6 py-2.5 rounded-xl font-black text-sm hover:scale-105 transition-transform">
+            PEÇA AGORA
+        </button>
+    </div>
 </body>
 
 </html>
